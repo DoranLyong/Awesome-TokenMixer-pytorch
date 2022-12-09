@@ -35,8 +35,8 @@ This project is inspired by [Fighting CV](https://github.com/xmu-xiaoma666/Exter
 * LKA (VAN, [2022](https://github.com/Visual-Attention-Network/VAN-Classification)) --- ([pytorch](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/conv/VAN.py))([graph](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/ComputationGraph_imgs/conv/VAN.png))
 
 # Spectral Features
-* Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- (pytorch)(graph)
-* Fourier Mixer (FNet, [2021](https://arxiv.org/abs/2105.03824v4)) --- (pytorch)(graph)
+* Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
+* Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 
 # Backbones 
 
