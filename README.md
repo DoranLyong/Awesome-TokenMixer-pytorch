@@ -5,8 +5,7 @@ This project is inspired by [Fighting CV](https://github.com/xmu-xiaoma666/Exter
 Other references: 
 
 *  [xFormers](https://github.com/facebookresearch/xformers)
-
-* [OpenMixup](https://github.com/Westlake-AI/openmixup)
+*  [OpenMixup](https://github.com/Westlake-AI/openmixup)
 
 
 
