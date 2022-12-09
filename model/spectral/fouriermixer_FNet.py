@@ -6,6 +6,7 @@
     - https://github.com/facebookresearch/xformers/blob/main/xformers/components/attention/fourier_mix.py
     - https://github.com/raoyongming/GFNet
     - https://github.com/google-research/google-research/tree/master/f_net
+    - https://youtu.be/lusBZR93n64 (paper review)
 """
 import torch 
 import torch.nn as nn 
