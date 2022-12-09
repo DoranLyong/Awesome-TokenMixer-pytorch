@@ -9,6 +9,14 @@ Other references:
 
 
 
+```bash
+# code test env.
+python == 3.10.8
+pytorch == 1.12.1
+```
+
+
+
 ***
 
 # Contents
