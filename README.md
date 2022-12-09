@@ -2,6 +2,9 @@
 
 This project is inspired by [Fighting CV](https://github.com/xmu-xiaoma666/External-Attention-pytorch)'s project. Also, refer to [xFormers](https://github.com/facebookresearch/xformers) repository of the Meta research to get code insights.
 
+Other references: 
+* [OpenMixup](https://github.com/Westlake-AI/openmixup)
+
 
 
 ***
