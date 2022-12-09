@@ -21,7 +21,7 @@ class FourierMixer(nn.Module):
     """
     def __init__(self, dim=2, seq_len=16, **kwargs):
         super().__init__()
-        self.complex_weight = nn.Parameter(torch.randn(seq_len, (dim//2+1), 2, dtype=torch.float32) * 0.02)
+        self.complex_weight = nn.Parameter(torch.randn(seq_len, (dim//2+1), 2, dtype=torch.float32) * 0.02) # (seq_len, dim//2+1, Re/Im)
 
     def forward(self, x):
         B, L, C = x.shape

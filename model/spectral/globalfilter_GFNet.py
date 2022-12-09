@@ -12,7 +12,7 @@ from torch.cuda.amp import autocast
 class GlobalFilter(nn.Module):
     def __init__(self, dim, h=14, w=8):
         super().__init__()
-        self.complex_weight = nn.Parameter(torch.randn(h, w, dim, 2, dtype=torch.float32) * 0.02)
+        self.complex_weight = nn.Parameter(torch.randn(h, w, dim, 2, dtype=torch.float32) * 0.02) # (h, w, dim, Re/Im)
 
     def forward(self, x, spatial_size=None):
         B, N, C = x.shape
