@@ -18,7 +18,8 @@ This project is inspired by [Fighting CV](https://github.com/xmu-xiaoma666/Exter
 ***
 
 # Attentions
-
+* HiLo Attention (LITv2, [2022](https://github.com/ziplab/litv2)) --- (pytorch)(graph)
+* Pay Less Attention (LITv1, [2022](https://github.com/ziplab/LIT)) --- (pytorch)(graph)
 * External Attention (EANet, [2021](https://github.com/MenghaoGuo/EANet)) --- ([pytorch](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/External_Attention.py))(graph)
 * Non-local Multi-head Self-Attention (Transformer, [2017](https://paperswithcode.com/method/multi-head-attention)) --- ([pytorch](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/non-local_MHSA.py))([graph](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/ComputationGraph_imgs/attention/non-local_MHSA.png))
 
