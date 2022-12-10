@@ -25,6 +25,7 @@ pytorch == 1.12.1
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
 - [Activations](#activations)
+- [Patch Embedding](#patch embedding )
 - [Backbones](#backbones)
 
 
@@ -65,6 +66,10 @@ pytorch == 1.12.1
 * GELU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/GELU.py))
 * SquaredReLU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/SquaredReLU.py))
 * StarReLU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/StarReLU.py))
+
+# Patch Embedding 
+
+* 
 
 # Backbones 
 
