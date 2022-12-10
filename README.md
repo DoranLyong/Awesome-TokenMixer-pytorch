@@ -57,7 +57,7 @@ pytorch == 1.12.1
 
 # Spectral Features
 * Fourier_test --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fourier_test.py))
-* img_FFT --- ([.py](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/img_FFT.py))([.ipynb](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/img_FFT.ipynb))
+* img_FFT --- ([.py](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/2D_FFT/img_FFT.py))([.ipynb](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/2D_FFT/img_FFT.ipynb))([2D FFT](https://github.com/DoranLyong/TokenMixer-pytorch/tree/main/model/spectral/2D_FFT))
 * Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 
