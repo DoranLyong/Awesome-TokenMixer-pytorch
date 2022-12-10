@@ -23,6 +23,7 @@ pytorch == 1.12.1
 # Contents
 
 - [Attentions](#attentions)
+- Channel Attentions
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
 - [Spectral Features](#spectral-features)
@@ -41,6 +42,10 @@ pytorch == 1.12.1
 * Pay Less Attention (LITv1, [2022](https://github.com/ziplab/LIT)) --- (pytorch_v1)(graph)
 * External Attention (EANet, [2021](https://github.com/MenghaoGuo/EANet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/External_Attention.py))(graph)
 * Non-local Multi-head Self-Attention (Transformer, [2017](https://paperswithcode.com/method/multi-head-attention)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/non-local_MHSA.py))([graph](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/ComputationGraph_imgs/attention/non-local_MHSA.png))
+
+# Channel Attentions 
+
+* Squeeze-and-Excitation ([SENet](https://arxiv.org/abs/1709.01507), 2018) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/SE_SENet.py))(graph)
 
 # MLPs
 
