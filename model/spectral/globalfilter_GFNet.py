@@ -1,3 +1,7 @@
+""" (ref) https://medium.com/optalysys/attention-fourier-transforms-a-giant-leap-in-transformer-efficiency-58ca0b3c4164
+    (ref) https://github.com/pkumivision/FFC/blob/main/model_zoo/ffc.py
+"""
+
 import math 
 
 import torch 
