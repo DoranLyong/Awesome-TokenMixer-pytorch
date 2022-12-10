@@ -22,9 +22,8 @@ pytorch == 1.12.1
 
 # Contents
 
-- [Attentions](#attentions)
+- [Spatial Attentions](#spatial-attentions)
 - [Channel Attentions](#channel-attentions)
-- Spatial Attentions
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
 - [Spectral Features](#spectral-features)
@@ -38,7 +37,7 @@ pytorch == 1.12.1
 
 ***
 
-# Attentions
+# Spatial Attentions
 * HiLo Attention (LITv2, [2022](https://github.com/ziplab/litv2)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/HiLo_LITv2.py))(graph)
 * Pay Less Attention (LITv1, [2022](https://github.com/ziplab/LIT)) --- (pytorch_v1)(graph)
 * External Attention (EANet, [2021](https://github.com/MenghaoGuo/EANet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/External_Attention.py))(graph)
