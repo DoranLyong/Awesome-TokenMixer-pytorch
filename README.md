@@ -29,6 +29,7 @@ pytorch == 1.12.1
 - [Activations](#activations)
 - [Patch Embedding](#patch-embedding )
 - [Scaling branch](#scaling-branch)
+- Normalization 
 - [Backbones](#backbones)
 
 
@@ -77,6 +78,12 @@ pytorch == 1.12.1
 # Scaling Branch 
 
 * Layer-/Residual-branch scaling ([LayerScale](https://arxiv.org/abs/2103.17239) 2021, [ResScale](https://arxiv.org/abs/2110.09456) 2021) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/scale/layer_res_scale.py))([timm](https://github.com/rwightman/pytorch-image-models/blob/main/timm/models/vision_transformer.py))
+
+# Normalization 
+
+* GroupNorm
+* LayerNorm 
+* BatchNorm 
 
 # Backbones 
 
