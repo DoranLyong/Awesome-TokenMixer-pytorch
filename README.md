@@ -29,7 +29,7 @@ pytorch == 1.12.1
 - [Activations](#activations)
 - [Patch Embedding](#patch-embedding )
 - [Scaling branch](#scaling-branch)
-- Normalization 
+- [Normalization](#normalization) 
 - [Backbones](#backbones)
 
 
