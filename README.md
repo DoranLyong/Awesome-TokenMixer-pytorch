@@ -74,5 +74,9 @@ pytorch == 1.12.1
 
 * patch embed --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/patch_emb/patch_embed.py))
 
+# Scaling Branch 
+
+* Layer-/Residual-branch scaling ([LayerScale](https://arxiv.org/abs/2103.17239) 2021, [ResScale](https://arxiv.org/abs/2110.09456) 2021) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/scale/layer_res_scale.py))
+
 # Backbones 
 
