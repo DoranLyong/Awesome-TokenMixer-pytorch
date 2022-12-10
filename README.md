@@ -23,7 +23,8 @@ pytorch == 1.12.1
 # Contents
 
 - [Attentions](#attentions)
-- Channel Attentions
+- [Channel Attentions](#channel-attentions)
+- Spatial Attentions
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
 - [Spectral Features](#spectral-features)
