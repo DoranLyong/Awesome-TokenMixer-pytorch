@@ -1,7 +1,11 @@
+""" (ref) https://github.com/sail-sg/metaformer/blob/main/metaformer_baselines.py
+    (ref) https://arxiv.org/abs/2210.13452
+"""
+
 import torch 
 import torch.nn as nn 
 
-from timm.models.layers import trunc_normal_, DropPath
+from timm.models.layers import DropPath
 from timm.models.layers.helpers import to_2tuple
 
 
