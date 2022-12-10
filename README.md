@@ -24,6 +24,7 @@ pytorch == 1.12.1
 - [Attentions](#attentions)
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
+- [Activations](#activations)
 - [Backbones](#backbones)
 
 
@@ -52,6 +53,10 @@ pytorch == 1.12.1
 * Fourier_test --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fourier_test.py))
 * Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
+
+# Activations 
+
+* ReLU --- (pytorch_v1)
 
 # Backbones 
 
