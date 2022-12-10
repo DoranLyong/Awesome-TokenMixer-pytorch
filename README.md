@@ -28,7 +28,7 @@ pytorch == 1.12.1
 - [Spectral Features](#spectral-features)
 - [Activations](#activations)
 - [Patch Embedding](#patch-embedding )
-- Scaling branch
+- [Scaling branch](#scaling-branch)
 - [Backbones](#backbones)
 
 
