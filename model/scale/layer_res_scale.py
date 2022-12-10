@@ -1,5 +1,5 @@
 """ (ref) https://github.com/sail-sg/metaformer/blob/main/metaformer_baselines.py
-    (ref) https://arxiv.org/abs/2210.13452
+    (ref) https://arxiv.org/abs/2210.13452   ; Read this paper for more details.
 """
 
 import torch 
