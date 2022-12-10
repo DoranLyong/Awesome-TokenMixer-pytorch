@@ -56,7 +56,10 @@ pytorch == 1.12.1
 
 # Activations 
 
-* ReLU --- (pytorch_v1)
+* ReLU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/ReLU.py))
+* GELU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/GELU.py))
+* SquaredReLU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/SquaredReLU.py))
+* StarReLU --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/StarReLU.py))
 
 # Backbones 
 
