@@ -24,8 +24,9 @@ pytorch == 1.12.1
 - [Attentions](#attentions)
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
+- [Spectral Features](#spectral-features)
 - [Activations](#activations)
-- [Patch Embedding](#patch embedding )
+- [Patch Embedding](#patch-embedding )
 - [Backbones](#backbones)
 
 
