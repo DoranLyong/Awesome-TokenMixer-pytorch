@@ -45,6 +45,7 @@ pytorch == 1.12.1
 
 # Channel Attentions 
 
+* Frequency Channel Attention (FcaNet, [2021](https://arxiv.org/abs/2012.11879)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/FCA_FcaNet.py))(graph)
 * Global Context Attention (GCNet, [2019](https://arxiv.org/abs/1904.11492)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/GCA_GCNet.py))(graph)
 * Efficient Channel Attention (ECA-Net, [2019](https://arxiv.org/abs/1910.03151)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/ECA_ECANet.py))(graph)
 * Squeeze-and-Excitation (SE-Net, [2018](https://arxiv.org/abs/1709.01507)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/SE_SENet.py))(graph)
