@@ -70,7 +70,7 @@ pytorch == 1.12.1
 
 # Patch Embedding 
 
-* 
+* patch embed --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/patch_emb/patch_embed.py))
 
 # Backbones 
 
