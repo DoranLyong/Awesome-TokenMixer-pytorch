@@ -46,7 +46,8 @@ pytorch == 1.12.1
 
 # Channel Attentions 
 
-* Squeeze-and-Excitation ([SENet](https://arxiv.org/abs/1709.01507), 2018) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/SE_SENet.py))(graph)
+* Efficient Channel Attention (ECA-Net, [2019](https://arxiv.org/abs/1910.03151)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/ECA_ECANet.py))(graph)
+* Squeeze-and-Excitation (SE-Net, [2018](https://arxiv.org/abs/1709.01507)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/channel_attention/SE_SENet.py))(graph)
 
 # MLPs
 
