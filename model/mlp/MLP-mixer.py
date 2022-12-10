@@ -1,5 +1,6 @@
 """ MLP-Mixer
     (ref1) https://github.com/sail-sg/metaformer/blob/main/metaformer_baselines.py
+    (ref2) https://arxiv.org/abs/2105.01601
 """ 
 import torch 
 import torch.nn as nn 
