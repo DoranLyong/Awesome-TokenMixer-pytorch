@@ -1,4 +1,5 @@
-""" (ref) https://github.com/sail-sg/iFormer
+""" (ref1) https://github.com/sail-sg/iFormer
+    (ref2) https://arxiv.org/abs/2205.12956
 """
 import torch 
 import torch.nn as nn 
