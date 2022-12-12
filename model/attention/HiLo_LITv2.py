@@ -31,3 +31,4 @@ class HiLo(nn.Module):
 
         # == local window size. The `s` in the paper.
         self.ws = window_size
+        
