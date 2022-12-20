@@ -3,7 +3,6 @@
 
     (ref) https://youtu.be/4gal2zIjm3M
     (ref) https://gaussian37.github.io/dl-concept-batchnorm/
-
 """
 import matplotlib.pyplot as plt 
 
@@ -26,12 +25,12 @@ class BatchNorm1D(nn.Module):
     def forward(self, x):
         if self.training:
             # Compute the mean and variance of the mini-batch
-            mean = x.mean(dim=0, keepdim=True)
-            var = ((x - mean) ** 2).mean(dim=0, keepdim=True)
+            mean = x.mean(dim=0, keepdim=False)
+            var = ((x - mean) ** 2).mean(dim=0, keepdim=False)
 
             # Update the running mean and variance
-            self.running_mean.mul_(1 - self.momentum).unsqueeze(0).add_(self.momentum * mean.data)
-            self.running_var.mul_(1 - self.momentum).unsqueeze(0).add_(self.momentum * var.data)
+            self.running_mean.mul_(1 - self.momentum).add_(self.momentum * mean.data)
+            self.running_var.mul_(1 - self.momentum).add_(self.momentum * var.data)
         else:
             mean = torch.tensor(self.running_mean).to(x.device)
             var = torch.tensor(self.running_var).to(x.device)
