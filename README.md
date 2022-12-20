@@ -92,7 +92,7 @@ pytorch == 1.12.1
 
 * GroupNorm
 * LayerNorm ([2016](https://arxiv.org/abs/1607.06450)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/norm/layer_norm.py))
-* BatchNorm 
+* BatchNorm ([2015](https://arxiv.org/abs/1502.03167)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/norm/batch_norm1D.py))
 
 # Backbones 
 
