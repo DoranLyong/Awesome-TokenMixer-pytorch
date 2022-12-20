@@ -116,32 +116,37 @@ class HiLo(nn.Module):
     
 
     def flops(self, H, W):
-        # pad the feature map when the height and width cannot be divided by window size
+        # -- pad the feature map when the height and width cannot be divided by window size
         Hp = self.ws * math.ceil(H / self.ws)
         Wp = self.ws * math.ceil(W / self.ws)
 
         Np = Hp * Wp
 
-        # For Hi-Fi
-        # qkv
+        # == For Hi-Fi
+        # -- qkv
         hifi_flops = Np * self.dim * self.h_dim * 3
         nW = (Hp // self.ws) * (Wp // self.ws)
         window_len = self.ws * self.ws
-        # q @ k and attn @ v
+        
+        # -- q @ k and attn @ v
         window_flops = window_len * window_len * self.h_dim * 2
         hifi_flops += nW * window_flops
-        # projection
+        
+        # -- projection
         hifi_flops += Np * self.h_dim * self.h_dim
 
-        # for Lo-Fi
-        # q
+        # == for Lo-Fi
+        # -- q
         lofi_flops = Np * self.dim * self.l_dim
         kv_len = (Hp // self.ws) * (Wp // self.ws)
-        # k, v
+        
+        # -- k, v
         lofi_flops += kv_len * self.dim * self.l_dim * 2
-        # q @ k and attn @ v
+        
+        # -- q @ k and attn @ v
         lofi_flops += Np * self.l_dim * kv_len * 2
-        # projection
+        
+        # -- projection
         lofi_flops += Np * self.l_dim * self.l_dim
 
         return hifi_flops + lofi_flops
@@ -157,4 +162,6 @@ if __name__ == "__main__":
     attn = HiLo(dim, num_heads=heads, qkv_bias=False, attn_drop=0., proj_drop=0.)
 
     output = attn(x, H, W)
-    print(output.shape)
+    print(f"out shape: {output.shape}")
+
+    print(f"FLOPs: {attn.flops(H, W)*1e-6:.2f}M")
