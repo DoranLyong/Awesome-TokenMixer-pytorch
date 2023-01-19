@@ -7,6 +7,7 @@ Other references:
 *  [xFormers](https://github.com/facebookresearch/xformers)
 *  [OpenMixup](https://github.com/Westlake-AI/openmixup)
 *  [Awesome-Vision-Attentions](https://github.com/MenghaoGuo/Awesome-Vision-Attentions)
+*  [vit-pytorch](https://github.com/lucidrains/vit-pytorch)
 
 
 
