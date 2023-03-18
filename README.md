@@ -9,6 +9,7 @@ Other references:
 *  [Awesome-Vision-Attentions](https://github.com/MenghaoGuo/Awesome-Vision-Attentions)
 *  [vit-pytorch](https://github.com/lucidrains/vit-pytorch)
 *  [Networks-Beyond-Attention](https://github.com/FocalNet/Networks-Beyond-Attention)
+*  [Efficient-AI-Backbones](https://github.com/huawei-noah/Efficient-AI-Backbones)
 
 
 
