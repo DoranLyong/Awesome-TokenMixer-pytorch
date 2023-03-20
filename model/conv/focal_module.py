@@ -71,7 +71,7 @@ if __name__ == "__main__":
     dim = 64
     x = torch.randn(1, 7, 7, dim) # input 
 
-    flocal_block = FocalModulation(dim=dim, focal_window=3, focal_level=3)
+    focal_block = FocalModulation(dim=dim, focal_window=3, focal_level=3)
 
-    output = flocal_block(x)
+    output = focal_block(x)
     print(output.shape)
