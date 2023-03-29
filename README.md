@@ -30,6 +30,8 @@ pytorch == 1.12.1
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
 - [Spectral Features](#spectral-features)
+- [Hybrid](#hybrid)
+- [Spatio-Temporal (ST)](#spatio-temporal (st))
 - [Activations](#activations)
 - [Patch Embedding](#patch-embedding )
 - [Branch Scaling](#branch-scaling)
@@ -78,11 +80,14 @@ pytorch == 1.12.1
 * Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 
-
-
 # Hybrid
 
 * MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer)) --- ([pytorch v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/hybrid/MHRA_uniformer_v1.py))(graph)
+
+# Spatio-Temporal (ST)
+
+* MHRA (Uniformer v2, [2022](https://github.com/OpenGVLab/UniFormerV2/blob/main/slowfast/models/uniformerv2_model.py)) --- (pytorch v1)(graph)
+* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer/blob/main/video_classification/slowfast/models/uniformer.py)) --- (pytorch v1)(graph)
 
 # Activations 
 
