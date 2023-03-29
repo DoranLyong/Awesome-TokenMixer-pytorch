@@ -1,5 +1,5 @@
 # (ref) https://github.com/Sense-X/UniFormer/blob/main/image_classification/models/uniformer.py
-""" Multi-Head Relation Aggregator (MHRA) for UniFormer.
+""" Multi-Head Relation Aggregator (MHRA) for image classification.
 """
 from functools import partial
 
