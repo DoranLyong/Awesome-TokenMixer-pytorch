@@ -31,7 +31,7 @@ pytorch == 1.12.1
 - [Convolutions](#convolutions)
 - [Spectral Features](#spectral-features)
 - [Hybrid](#hybrid)
-- [Spatio-Temporal (ST)](#spatio-temporal (st))
+- [Spatio-Temporal (ST)](#spatio-temporal-st)
 - [Activations](#activations)
 - [Patch Embedding](#patch-embedding )
 - [Branch Scaling](#branch-scaling)
