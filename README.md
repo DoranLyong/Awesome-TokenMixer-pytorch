@@ -78,6 +78,12 @@ pytorch == 1.12.1
 * Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 
+
+
+# Hybrid
+
+* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer)) --- ([pytorch v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/hybrid/MHRA_uniformer_v1.py))(graph)
+
 # Activations 
 
 * StarReLU ([2022](https://arxiv.org/abs/2210.13452)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/StarReLU.py))
