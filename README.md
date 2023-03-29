@@ -82,12 +82,12 @@ pytorch == 1.12.1
 
 # Hybrid
 
-* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer)) --- ([pytorch v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/hybrid/MHRA_uniformer_v1.py))(graph)
+* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/hybrid/MHRA_uniformer_v1.py))(graph)
 
 # Spatio-Temporal (ST)
 
-* MHRA (Uniformer v2, [2022](https://github.com/OpenGVLab/UniFormerV2/blob/main/slowfast/models/uniformerv2_model.py)) --- (pytorch v1)(graph)
-* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer/blob/main/video_classification/slowfast/models/uniformer.py)) --- (pytorch v1)(graph)
+* MHRA (Uniformer v2, [2022](https://github.com/OpenGVLab/UniFormerV2/blob/main/slowfast/models/uniformerv2_model.py)) --- (pytorch_v1)(graph)
+* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer/blob/main/video_classification/slowfast/models/uniformer.py)) --- (pytorch_v1)(graph)
 
 # Activations 
 
