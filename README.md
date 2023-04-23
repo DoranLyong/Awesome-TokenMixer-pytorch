@@ -63,6 +63,7 @@ pytorch == 1.12.1
 
 # Convolutions
 
+* InceptionDWConv2d (InceptionNeXt, [2023](https://github.com/sail-sg/inceptionnext)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/InceptionDWConv2d_InceptionNeXt.py))(graph)
 * ParC operator (ParC-Net, [2022](https://github.com/hkzhang91/parc-net)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/ParC_convnext.py))(graph)
 * Dynamic DWConv (DWNet, [2022](https://arxiv.org/abs/2106.04263#)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/DynamicDWConv.py))(graph)
 * Focal Module (FocalNets, [2022](https://github.com/microsoft/FocalNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/conv/focal_module.py))([graph](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/ComputationGraph_imgs/conv/focal_module.png))
