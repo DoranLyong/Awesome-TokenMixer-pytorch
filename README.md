@@ -30,6 +30,7 @@ pytorch == 1.12.1
 - [MLPs](#mlps)
 - [Convolutions](#convolutions)
 - [Spectral Features](#spectral-features)
+- [Graph](#graph)
 - [Hybrid](#hybrid)
 - [Spatio-Temporal (ST)](#spatio-temporal-st)
 - [Activations](#activations)
@@ -79,6 +80,10 @@ pytorch == 1.12.1
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 * Fourier_test --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fourier_test.py))
 * img_FFT --- ([.py](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/2D_FFT/img_FFT.py))([.ipynb](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/2D_FFT/img_FFT.ipynb))([2D FFT](https://github.com/DoranLyong/TokenMixer-pytorch/tree/main/model/spectral/2D_FFT))
+
+# Graph
+
+* Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) -- (pytorch_v1)(graph)
 
 # Hybrid
 
