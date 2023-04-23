@@ -83,7 +83,7 @@ pytorch == 1.12.1
 
 # Graph
 
-* Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) -- (pytorch_v1)(graph)
+* Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) --- (pytorch_v1)(graph)
 
 # Hybrid
 
