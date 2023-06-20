@@ -118,3 +118,5 @@ pytorch == 1.12.1
 
 # Backbones 
 
+* MetaFormer baseline (2022) --- (pytorch_v1)
+* PoolFormer ([2022](https://github.com/sail-sg/poolformer)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/PoolFormer.py))
