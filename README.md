@@ -118,6 +118,7 @@ pytorch == 1.12.1
 
 # Backbones 
 
+* VanillaNet ([2023](https://github.com/huawei-noah/VanillaNet/tree/main)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/VanillaNet.py))
 * InceptionNeXt; MetaNeXt ([2023](https://github.com/sail-sg/inceptionnext/tree/main)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/MetaNeXt.py))
 * MetaFormer baseline ([2022](https://github.com/sail-sg/metaformer/tree/main)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/MetaFormer.py))
 * PoolFormer ([2022](https://github.com/sail-sg/poolformer)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/PoolFormer.py))
