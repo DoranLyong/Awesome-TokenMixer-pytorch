@@ -3,7 +3,7 @@
 This project is inspired by [Fighting CV](https://github.com/xmu-xiaoma666/External-Attention-pytorch)'s project. Also, other references are included to get code insights.
 
 Other references: 
-
+*  [x-transformers](https://github.com/lucidrains/x-transformers)
 *  [xFormers](https://github.com/facebookresearch/xformers)
 *  [OpenMixup](https://github.com/Westlake-AI/openmixup)
 *  [Awesome-Vision-Attentions](https://github.com/MenghaoGuo/Awesome-Vision-Attentions)
