@@ -82,7 +82,7 @@ pytorch == 1.12.1
 * img_FFT --- ([.py](./model/spectral/2D_FFT/img_FFT.py))([.ipynb](./model/spectral/2D_FFT/img_FFT.ipynb))([2D FFT](./model/spectral/2D_FFT))
 
 # Graph
-* Mobile ViG (SVGA, [2023](https://github.com/SLDGroup/MobileViG)) --- ([pytorch_v1](./model/graph/MobileViG/mobilevig.py))(graph)
+* Mobile ViG ([SVGA](./model/graph/MobileViG/svga.py), [2023](https://github.com/SLDGroup/MobileViG)) --- ([pytorch_v1](./model/graph/MobileViG/mobilevig.py))(graph)
 * Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) --- ([pytorch_v1](./model/graph/ViG))(graph)
 
 # Hybrid
@@ -117,7 +117,6 @@ pytorch == 1.12.1
 * BatchNorm ([2015](https://arxiv.org/abs/1502.03167)) --- ([pytorch_v1](./model/norm/batch_norm1D.py))
 
 # Backbones 
-
 * VanillaNet ([2023](https://github.com/huawei-noah/VanillaNet/tree/main)) --- ([pytorch_v1](./model/backbones/VanillaNet.py))
 * InceptionNeXt; MetaNeXt ([2023](https://github.com/sail-sg/inceptionnext/tree/main)) --- ([pytorch_v1](./model/backbones/MetaNeXt.py))
 * MetaFormer baseline ([2022](https://github.com/sail-sg/metaformer/tree/main)) --- ([pytorch_v1](./model/backbones/MetaFormer.py))
