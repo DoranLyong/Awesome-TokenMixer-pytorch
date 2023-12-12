@@ -79,46 +79,46 @@ pytorch == 1.12.1
 * Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 * Fourier_test --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fourier_test.py))
-* img_FFT --- ([.py](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/2D_FFT/img_FFT.py))([.ipynb](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/2D_FFT/img_FFT.ipynb))([2D FFT](https://github.com/DoranLyong/TokenMixer-pytorch/tree/main/model/spectral/2D_FFT))
+* img_FFT --- ([.py](./model/spectral/2D_FFT/img_FFT.py))([.ipynb](./model/spectral/2D_FFT/img_FFT.ipynb))([2D FFT](./model/spectral/2D_FFT))
 
 # Graph
 * Mobile ViG (SVGA, [2023](https://github.com/SLDGroup/MobileViG)) --- ([pytorch_v1](./model/graph/MobileViG/mobilevig.py))(graph)
-* Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/tree/main/model/graph/ViG))(graph)
+* Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) --- ([pytorch_v1](./model/graph/ViG))(graph)
 
 # Hybrid
 
-* Inception Mixer (iFormer, [2022](https://github.com/sail-sg/iFormer)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/attention/inceptionMixer_iFormer.py))(graph)
-* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/hybrid/MHRA_uniformer_v1.py))(graph)
+* Inception Mixer (iFormer, [2022](https://github.com/sail-sg/iFormer)) --- ([pytorch_v1](./model/attention/inceptionMixer_iFormer.py))(graph)
+* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer)) --- ([pytorch_v1](./model/hybrid/MHRA_uniformer_v1.py))(graph)
 
 # Spatio-Temporal (ST)
 
 * MHRA (Uniformer v2, [2022](https://github.com/OpenGVLab/UniFormerV2/blob/main/slowfast/models/uniformerv2_model.py)) --- (pytorch_v1)(graph)([mmaction2](https://mmaction2.readthedocs.io/en/latest/model_zoo/recognition.html#uniformerv2))
-* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer/blob/main/video_classification/slowfast/models/uniformer.py)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/spatio_temporal/MHRA_uniformer_v1.py))(graph)([mmaction2](https://mmaction2.readthedocs.io/en/latest/model_zoo/recognition.html#uniformer))
+* MHRA (Uniformer v1, [2022](https://github.com/Sense-X/UniFormer/blob/main/video_classification/slowfast/models/uniformer.py)) --- ([pytorch_v1](./model/spatio_temporal/MHRA_uniformer_v1.py))(graph)([mmaction2](https://mmaction2.readthedocs.io/en/latest/model_zoo/recognition.html#uniformer))
 
 # Activations 
 
-* StarReLU ([2022](https://arxiv.org/abs/2210.13452)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/StarReLU.py))
-* SquaredReLU ([2021](https://arxiv.org/abs/2109.08668)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/SquaredReLU.py))
-* GELU ([2016](https://arxiv.org/abs/1606.08415)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/GELU.py))([scratch_code](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/activation/GELU_from_scratch.py))([quick_version](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/activation/quickGELU.py))
-* ReLU ([2010](https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/activation/ReLU.py))
+* StarReLU ([2022](https://arxiv.org/abs/2210.13452)) --- ([pytorch_v1](./model/activation/StarReLU.py))
+* SquaredReLU ([2021](https://arxiv.org/abs/2109.08668)) --- ([pytorch_v1](./model/activation/SquaredReLU.py))
+* GELU ([2016](https://arxiv.org/abs/1606.08415)) --- ([pytorch_v1](./model/activation/GELU.py))([scratch_code](./model/activation/GELU_from_scratch.py))([quick_version](./model/activation/quickGELU.py))
+* ReLU ([2010](https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf)) --- ([pytorch_v1](./model/activation/ReLU.py))
 
 # Patch Embedding 
 
-* patch embed --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/patch_emb/patch_embed.py))
+* patch embed --- ([pytorch_v1](./model/patch_emb/patch_embed.py))
 
 # Branch Scaling 
 
-* Layer-/Residual-branch scaling ([LayerScale](https://arxiv.org/abs/2103.17239) 2021, [ResScale](https://arxiv.org/abs/2110.09456) 2021) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/scale/layer_res_scale.py))([timm](https://github.com/rwightman/pytorch-image-models/blob/main/timm/models/vision_transformer.py))
+* Layer-/Residual-branch scaling ([LayerScale](https://arxiv.org/abs/2103.17239) 2021, [ResScale](https://arxiv.org/abs/2110.09456) 2021) --- ([pytorch_v1](./model/scale/layer_res_scale.py))([timm](https://github.com/rwightman/pytorch-image-models/blob/main/timm/models/vision_transformer.py))
 
 # Normalization 
 
 * GroupNorm
-* LayerNorm ([2016](https://arxiv.org/abs/1607.06450)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/norm/layer_norm.py))
-* BatchNorm ([2015](https://arxiv.org/abs/1502.03167)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/norm/batch_norm1D.py))
+* LayerNorm ([2016](https://arxiv.org/abs/1607.06450)) --- ([pytorch_v1](./model/norm/layer_norm.py))
+* BatchNorm ([2015](https://arxiv.org/abs/1502.03167)) --- ([pytorch_v1](./model/norm/batch_norm1D.py))
 
 # Backbones 
 
-* VanillaNet ([2023](https://github.com/huawei-noah/VanillaNet/tree/main)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/VanillaNet.py))
-* InceptionNeXt; MetaNeXt ([2023](https://github.com/sail-sg/inceptionnext/tree/main)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/MetaNeXt.py))
-* MetaFormer baseline ([2022](https://github.com/sail-sg/metaformer/tree/main)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/MetaFormer.py))
-* PoolFormer ([2022](https://github.com/sail-sg/poolformer)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/backbones/PoolFormer.py))
+* VanillaNet ([2023](https://github.com/huawei-noah/VanillaNet/tree/main)) --- ([pytorch_v1](./model/backbones/VanillaNet.py))
+* InceptionNeXt; MetaNeXt ([2023](https://github.com/sail-sg/inceptionnext/tree/main)) --- ([pytorch_v1](./model/backbones/MetaNeXt.py))
+* MetaFormer baseline ([2022](https://github.com/sail-sg/metaformer/tree/main)) --- ([pytorch_v1](./model/backbones/MetaFormer.py))
+* PoolFormer ([2022](https://github.com/sail-sg/poolformer)) --- ([pytorch_v1](./model/backbones/PoolFormer.py))
