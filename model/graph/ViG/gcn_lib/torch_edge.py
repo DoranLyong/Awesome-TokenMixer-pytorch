@@ -38,6 +38,8 @@ def part_pairwise_distance(x, start_idx=0, end_idx=1):
 
 def xy_pairwise_distance(x, y):
     """
+    Distance**2 = (x-y)**2 = x**2 - 2xy + y**2
+    
     Compute pairwise distance of a point cloud.
     Args:
         x: tensor (batch_size, num_points, num_dims)
@@ -45,9 +47,9 @@ def xy_pairwise_distance(x, y):
         pairwise distance: (batch_size, num_points, num_points)
     """
     with torch.no_grad():
-        xy_inner = -2*torch.matmul(x, y.transpose(2, 1))
-        x_square = torch.sum(torch.mul(x, x), dim=-1, keepdim=True)
-        y_square = torch.sum(torch.mul(y, y), dim=-1, keepdim=True)
+        xy_inner = -2*torch.matmul(x, y.transpose(2, 1)) # -2xy
+        x_square = torch.sum(torch.mul(x, x), dim=-1, keepdim=True) # x**2
+        y_square = torch.sum(torch.mul(y, y), dim=-1, keepdim=True) # y**2
         return x_square + xy_inner + y_square.transpose(2, 1)
 
 
