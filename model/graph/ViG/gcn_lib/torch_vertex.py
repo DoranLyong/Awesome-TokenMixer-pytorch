@@ -10,6 +10,39 @@ import torch.nn.functional as F
 from timm.models.layers import DropPath
 
 
+
+class FAGCN(nn.Module): 
+    """
+    Frequency-adaptive GCN (Paper: https://arxiv.org/abs/2101.00797)
+    """
+    def __init__(self, in_channels, out_channels, act='relu', norm=None, bias=True):
+        super(FAGCN, self).__init__()
+
+        self.linear = nn.Conv2d(in_channels*2, 1, kernel_size=1)
+        self.update = BasicConv([in_channels, out_channels], act, norm, bias)
+
+        eps_init = 0.0
+        self.eps = nn.Parameter(torch.Tensor([eps_init]))
+
+        
+    def forward(self, x, edge_index, y=None):        
+        x_i = batched_index_select(x, edge_index[1]) # [B,C,N,K]; node value tensor for the center_node 
+        if y is not None:
+            x_j = batched_index_select(y, edge_index[0]) # [B,C,N,K]; node value tensor for the neighbors
+        else:
+            x_j = batched_index_select(x, edge_index[0])
+
+        _,_,_,K = x_j.shape 
+        #degree_list = [K] + [1]*(K - 1) 
+
+        alpha_g = torch.tanh(self.linear(torch.cat([x_i, x_j], dim=1))) # (B,2*C,N,K) -> (B,1,N,K)
+        D_norm = torch.tensor([K] + [K**0.5]*(K-1)).view(1,1,1,K) # (1,1,1,K)        
+        coeff = alpha_g / D_norm # (B,1,N,K)        
+        x_j = torch.sum(coeff * x_j, dim=-1, keepdim=True) # aggregate; (B,C,N,1)
+
+        return self.update((1+self.eps)*x + x_j)  # combine --> update 
+
+
 class MRConv2d(nn.Module):
     """
     Max-Relative Graph Convolution (Paper: https://arxiv.org/abs/1904.03751) for dense data type
