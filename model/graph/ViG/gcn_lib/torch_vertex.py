@@ -27,7 +27,7 @@ class MRConv2d(nn.Module):
         x_j, _ = torch.max(x_j - x_i, -1, keepdim=True) # create message; max-relative message [B,C,N,1], _
         b, c, n, _ = x.shape
         x = torch.cat([x.unsqueeze(2), x_j.unsqueeze(2)], dim=2).reshape(b, 2 * c, n, _) # aggregation; (B,C,2,N,1) --> (B,2*C,N,1)
-        return self.nn(x) # node update; (B,2*C,N,1) --> [1x1 conv] --> (B,C,N,1)
+        return self.nn(x) # node update; (B,2*C,N,1) --> [conv 1x1] --> (B,C,N,1)
 
 
 class EdgeConv2d(nn.Module):
