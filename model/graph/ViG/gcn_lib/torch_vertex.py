@@ -62,8 +62,8 @@ class GraphSAGE(nn.Module):
             x_j = batched_index_select(y, edge_index[0])
         else:
             x_j = batched_index_select(x, edge_index[0])
-        x_j, _ = torch.max(self.nn1(x_j), -1, keepdim=True)
-        return self.nn2(torch.cat([x, x_j], dim=1))
+        x_j, _ = torch.max(self.nn1(x_j), -1, keepdim=True) # message aggregation 
+        return self.nn2(torch.cat([x, x_j], dim=1)) # combine --> update 
 
 
 class GINConv2d(nn.Module):
