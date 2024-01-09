@@ -24,9 +24,9 @@ class MRConv2d(nn.Module):
             x_j = batched_index_select(y, edge_index[0]) # [B,C,N,K]; node value tensor for the neighbors
         else:
             x_j = batched_index_select(x, edge_index[0])
-        x_j, _ = torch.max(x_j - x_i, -1, keepdim=True) # create message; max-relative message [B,C,N,1], _
+        x_j, _ = torch.max(x_j - x_i, -1, keepdim=True) # create message; max-relative aggregation [B,C,N,1], _
         b, c, n, _ = x.shape
-        x = torch.cat([x.unsqueeze(2), x_j.unsqueeze(2)], dim=2).reshape(b, 2 * c, n, _) # aggregation; (B,C,2,N,1) --> (B,2*C,N,1)
+        x = torch.cat([x.unsqueeze(2), x_j.unsqueeze(2)], dim=2).reshape(b, 2 * c, n, _) # combine; (B,C,2,N,1) --> (B,2*C,N,1)
         return self.nn(x) # node update; (B,2*C,N,1) --> [conv 1x1] --> (B,C,N,1)
 
 
@@ -43,7 +43,7 @@ class EdgeConv2d(nn.Module):
         if y is not None:
             x_j = batched_index_select(y, edge_index[0])
         else:
-            x_j = batched_index_select(x, edge_index[0])
+            x_j = batched_index_select(x, edge_index[0]) 
         max_value, _ = torch.max(self.nn(torch.cat([x_i, x_j - x_i], dim=1)), -1, keepdim=True)
         return max_value
 
@@ -81,8 +81,8 @@ class GINConv2d(nn.Module):
             x_j = batched_index_select(y, edge_index[0])
         else:
             x_j = batched_index_select(x, edge_index[0])
-        x_j = torch.sum(x_j, -1, keepdim=True)
-        return self.nn((1 + self.eps) * x + x_j)
+        x_j = torch.sum(x_j, -1, keepdim=True) # message aggregation out of neighbors 
+        return self.nn((1 + self.eps) * x + x_j) # combine --> update
 
 
 class GraphConv2d(nn.Module):
