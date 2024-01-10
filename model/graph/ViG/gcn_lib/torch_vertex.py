@@ -40,7 +40,7 @@ class FAGCN(nn.Module):
         coeff = alpha_g / D_norm # (B,1,N,K)        
         x_j = torch.sum(coeff * x_j, dim=-1, keepdim=True) # aggregate; (B,C,N,1)
 
-        return self.update((1+self.eps)*x + x_j)  # combine --> update 
+        return self.update((self.eps)*x + x_j)  # combine --> update 
 
 
 class MRConv2d(nn.Module):
