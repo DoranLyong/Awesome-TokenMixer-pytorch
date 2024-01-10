@@ -11,7 +11,7 @@ from timm.models.layers import DropPath
 
 
 
-class FAGCN(nn.Module): 
+class FAGCN2d(nn.Module): 
     """
     Frequency-adaptive GCN (Paper: https://arxiv.org/abs/2101.00797)
     """
@@ -36,7 +36,7 @@ class FAGCN(nn.Module):
         #degree_list = [K] + [1]*(K - 1) 
 
         alpha_g = torch.tanh(self.linear(torch.cat([x_i, x_j], dim=1))) # (B,2*C,N,K) -> (B,1,N,K)
-        D_norm = torch.tensor([K] + [K**0.5]*(K-1)).view(1,1,1,K) # (1,1,1,K)        
+        D_norm = torch.tensor([K] + [K**0.5]*(K-1)).view(1,1,1,K).to(alpha_g.device) # (1,1,1,K)        
         coeff = alpha_g / D_norm # (B,1,N,K)        
         x_j = torch.sum(coeff * x_j, dim=-1, keepdim=True) # aggregate; (B,C,N,1)
 
@@ -132,6 +132,8 @@ class GraphConv2d(nn.Module):
             self.gconv = GraphSAGE(in_channels, out_channels, act, norm, bias)
         elif conv == 'gin':
             self.gconv = GINConv2d(in_channels, out_channels, act, norm, bias)
+        elif conv == 'fagcn':
+            self.gconv = FAGCN2d(in_channels, out_channels, act, norm, bias)            
         else:
             raise NotImplementedError('conv:{} is not supported'.format(conv))
 
