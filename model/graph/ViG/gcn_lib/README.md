@@ -8,3 +8,5 @@
 
 ### Study source 
 * [Understanding Convolutons on Graphs](https://distill.pub/2021/understanding-gnns/)
+* [meliketoy/graph-tutorial.pytorch](https://github.com/meliketoy/graph-tutorial.pytorch)
+* [How GNN work: introduction to graph convolutions from scratch](https://theaisummer.com/graph-convolutional-networks/)
