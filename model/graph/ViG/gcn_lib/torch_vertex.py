@@ -16,7 +16,7 @@ class FAGCN2d(nn.Module):
     Frequency-adaptive GCN (Paper: https://arxiv.org/abs/2101.00797)
     """
     def __init__(self, in_channels, out_channels, act='relu', norm=None, bias=True):
-        super(FAGCN, self).__init__()
+        super(FAGCN2d, self).__init__()
 
         self.linear = nn.Conv2d(in_channels*2, 1, kernel_size=1)
         self.update = BasicConv([in_channels, out_channels], act, norm, bias)
