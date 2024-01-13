@@ -10,5 +10,5 @@
 * [Understanding Convolutons on Graphs](https://distill.pub/2021/understanding-gnns/)
 * [meliketoy/graph-tutorial.pytorch](https://github.com/meliketoy/graph-tutorial.pytorch)
 * [How GNN work: introduction to graph convolutions from scratch](https://theaisummer.com/graph-convolutional-networks/)
-* [Graph Signal Processing tutorial using the PyGSP, mdeff's github](https://github.com/mdeff/pygsp_tutorial_graphsip)
+* [Graph Signal Processing tutorial using the PyGSP, mdeff's github](https://github.com/mdeff/pygsp_tutorial_graphsip) ← ❤️
 * [Graph Signal Processing, balcilar's github](https://github.com/balcilar/Graph_Signal_Processing)
