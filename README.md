@@ -84,7 +84,7 @@ pytorch == 1.12.1
 # Graph
 * Mobile ViG ([SVGA](./model/graph/MobileViG/svga.py), [2023](https://github.com/SLDGroup/MobileViG)) --- ([pytorch_v1](./model/graph/MobileViG/mobilevig.py))(graph)
 * Vision GNN (ViG, [2022](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch)) --- ([pytorch_v1](./model/graph/ViG))(graph)
-* GINconv2d (GIN, [2019](https://arxiv.org/abs/1810.00826)) --- ([pytorch_v1](./model/graph/ViG))(graph)
+* GINconv2d (GIN, [2019](https://arxiv.org/abs/1810.00826)) --- ([pytorch_v1](./model/graph/GIN))(graph)
 
 # Hybrid
 
