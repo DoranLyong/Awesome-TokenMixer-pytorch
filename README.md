@@ -43,6 +43,7 @@ pytorch == 1.12.1
 
 ***
 # State Space Models 
+* Bidirectional Mamba (Vim, [2024](https://github.com/hustvl/Vim)) --- (pytorch_v1)(graph)
 * ConvSSM (ConvS5, [2023](https://arxiv.org/abs/2310.19694)) --- (pytorch_v1)(graph)
 
 # Spatial Attentions
