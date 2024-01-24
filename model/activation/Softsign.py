@@ -32,6 +32,6 @@ if __name__ == "__main__":
     plt.plot(x.detach().numpy(), x_grad.detach().numpy(), c='b',label='Gradient of Softsign')
     plt.xlim(-5, 5)
     plt.ylim(-3, 5)
-    plt.legend(loc='best')
+    plt.legend(fontsize="20", loc='best')
     plt.grid(True)
     plt.show() 
