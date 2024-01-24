@@ -24,7 +24,7 @@ pytorch == 1.12.1
 ***
 
 # Contents
-- [Stage Space Models](#state-space-models)
+- [State Space Models](#state-space-models)
 - [Spatial Attentions](#spatial-attentions)
 - [Channel Attentions](#channel-attentions)
 - [MLPs](#mlps)
@@ -43,6 +43,7 @@ pytorch == 1.12.1
 
 ***
 # State Space Models 
+* CSM (VMamba, [2024](https://github.com/MzeroMiko/VMamba)) --- (pytorch_v1)(graph)
 * Bidirectional Mamba (Vim, [2024](https://github.com/hustvl/Vim)) --- (pytorch_v1)(graph)
 * ConvSSM (ConvS5, [2023](https://arxiv.org/abs/2310.19694)) --- (pytorch_v1)(graph)
 
