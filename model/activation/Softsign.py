@@ -1,3 +1,4 @@
+# (ref) https://proceedings.mlr.press/v9/glorot10a
 import matplotlib.pyplot as plt 
 
 import torch 

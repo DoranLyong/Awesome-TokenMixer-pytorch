@@ -103,6 +103,7 @@ pytorch == 1.12.1
 * SquaredReLU ([2021](https://arxiv.org/abs/2109.08668)) --- ([pytorch_v1](./model/activation/SquaredReLU.py))
 * GELU ([2016](https://arxiv.org/abs/1606.08415)) --- ([pytorch_v1](./model/activation/GELU.py))([scratch_code](./model/activation/GELU_from_scratch.py))([quick_version](./model/activation/quickGELU.py))
 * ReLU ([2010](https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf)) --- ([pytorch_v1](./model/activation/ReLU.py))
+* Softsign ([2009](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)) ([pytorch_v1](./model/activation/Softsign.py))
 
 # Patch Embedding 
 
