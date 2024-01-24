@@ -23,7 +23,7 @@ if __name__ == "__main__":
     act = Softsign()
     out = act(x)
 
-    out.backward(torch.ones_like(x))
+    out.backward(torch.ones_like(x)) # out의 각 요소에 대해 역전파 수행
     x_grad = x.grad
 
     # == Vis. == #
