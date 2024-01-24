@@ -46,6 +46,7 @@ pytorch == 1.12.1
 * CSM (VMamba, [2024](https://github.com/MzeroMiko/VMamba)) --- (pytorch_v1)(graph)
 * Bidirectional Mamba (Vim, [2024](https://github.com/hustvl/Vim)) --- (pytorch_v1)(graph)
 * ConvSSM (ConvS5, [2023](https://arxiv.org/abs/2310.19694)) --- (pytorch_v1)(graph)
+* Selective SSMs (Mamba, [2023](https://arxiv.org/abs/2312.00752)) --- (pytorch_v1)(graph)
 
 # Spatial Attentions
 * HiLo Attention (LITv2, [2022](https://github.com/ziplab/litv2)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/attention/HiLo_LITv2.py))(graph)
