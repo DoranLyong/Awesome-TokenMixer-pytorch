@@ -26,16 +26,38 @@ class StarReLU(nn.Module):
 
 
 if __name__ == "__main__": 
-    x = torch.linspace(-5, 5, 1000, requires_grad=True) # requires_grad=True로 설정하여 자동 미분 가능)
-    act = StarReLU()
-    out = act(x)
-
-    out.backward(torch.ones_like(x)) # out의 각 요소에 대해 역전파 수행
-    x_grad = x.grad
+    x0 = torch.linspace(-5, 5, 1000, requires_grad=True) # requires_grad=True로 설정하여 자동 미분 가능)
+    x1 = torch.linspace(-5, 5, 1000, requires_grad=True) 
+    x2 = torch.linspace(-5, 5, 1000, requires_grad=True) 
     
+        
+    act0 = StarReLU(scale_value=1.0, bias_value=0.0)
+    out0 = act0(x0)
+    out0.backward(torch.ones_like(x0)) # out의 각 요소에 대해 역전파 수행
+    x0_grad = x0.grad
+    
+
+    act1 = StarReLU(scale_value=1.0, bias_value=1.0)
+    out1 = act1(x1)
+    out1.backward(torch.ones_like(x1)) # out의 각 요소에 대해 역전파 수행
+    x1_grad = x1.grad
+
+    
+    act2 = StarReLU(scale_value=0.5, bias_value=-1.0)
+    out2 = act2(x2)
+    out2.backward(torch.ones_like(x2)) # out의 각 요소에 대해 역전파 수행
+    x2_grad = x2.grad
+
+
     # == Vis. == #
-    plt.plot(x.detach().numpy(), out.detach().numpy(), c='r', label='StarReLU')
-    plt.plot(x.detach().numpy(), x_grad.detach().numpy(), c='b',label='Gradient of StarReLU')
+    plt.plot(x0.detach().numpy(), out0.detach().numpy(), c='r', label=f'StarReLU scale={1.0}, bias={0.0}')
+    plt.plot(x0.detach().numpy(), x0_grad.detach().numpy(), c='r', linestyle='--' ,label='Gradient')
+
+    plt.plot(x1.detach().numpy(), out1.detach().numpy(), c='b', label=f'StarReLU scale={1.0}, bias={1.0}')
+    plt.plot(x1.detach().numpy(), x1_grad.detach().numpy(), c='b', linestyle='--' ,label='Gradient')    
+
+    plt.plot(x2.detach().numpy(), out2.detach().numpy(), c='g', label=f'StarReLU scale={0.5}, bias={-1.0}')
+    plt.plot(x2.detach().numpy(), x2_grad.detach().numpy(), c='g', linestyle='--' ,label='Gradient')    
 
     plt.title("StarReLU Activation Function")
     plt.xlabel("Input Value (x)")
