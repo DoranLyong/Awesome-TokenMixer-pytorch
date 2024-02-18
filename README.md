@@ -106,11 +106,11 @@ pytorch == 1.12.1
 
 * StarReLU ([2022](https://arxiv.org/abs/2210.13452)) --- ([pytorch_v1](./model/activation/StarReLU.py))
 * SquaredReLU ([2021](https://arxiv.org/abs/2109.08668)) --- ([pytorch_v1](./model/activation/SquaredReLU.py))
-* GELU ([2016](https://arxiv.org/abs/1606.08415)) --- ([pytorch_v1](./model/activation/GELU.py))([scratch_code](./model/activation/GELU_from_scratch.py))([quick_version](./model/activation/quickGELU.py))
+* GELU ([2016](https://arxiv.org/abs/1606.08415)) --- ([pytorch_v1](./model/activation/GELU_likes/GELU.py))([scratch_code](./model/activation/GELU_likes/GELU_from_scratch.py))([quick_version](./model/activation/GELU_likes/quickGELU.py))
 * ReLU ([2010](https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf)) --- ([pytorch_v1](./model/activation/ReLU.py))
-* Softsign ([2009](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)) --- ([pytorch_v1](./model/activation/Softsign.py))
+* Softsign ([2009](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)) --- ([pytorch_v1](./model/activation/Modified_S-shaped_functions/Softsign.py))
 * Zero-centered s-shaped functions --- ([pytorch_v1](./model/activation/Modified_S-shaped_functions))
-* S-shape activation function comparision --- ([pytorch_v1](./model/activation/s-shape_activation.py))
+* S-shape activation function comparision --- ([pytorch_v1](./model/activation/Modified_S-shaped_functions/s-shape_activation.py))
 
 # Patch Embedding 
 
