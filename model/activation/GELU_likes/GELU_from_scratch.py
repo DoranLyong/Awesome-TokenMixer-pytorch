@@ -1,6 +1,7 @@
 """ GELU (Gaussian Error Linear Units)
     It has been shown to improve the performance of deep learning models in a variety of tasks.
     : https://arxiv.org/abs/1606.08415
+    : https://paperswithcode.com/method/gelu
 """
 import matplotlib.pyplot as plt 
 

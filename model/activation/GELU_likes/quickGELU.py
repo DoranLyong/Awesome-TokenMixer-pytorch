@@ -1,5 +1,6 @@
 # (ref) https://github.com/hendrycks/GELUs
 # (ref) https://github.com/OpenGVLab/UniFormerV2/blob/main/slowfast/models/uniformerv2_model.py
+# (ref) https://paperswithcode.com/method/gelu
 """ Quick GELU
 """
 import matplotlib.pyplot as plt 
