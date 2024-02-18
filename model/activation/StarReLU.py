@@ -36,8 +36,10 @@ if __name__ == "__main__":
     # == Vis. == #
     plt.plot(x.detach().numpy(), out.detach().numpy(), c='r', label='StarReLU')
     plt.plot(x.detach().numpy(), x_grad.detach().numpy(), c='b',label='Gradient of StarReLU')
-    plt.xlim(-5, 5)
-    plt.ylim(-3, 5)
+
+    plt.title("StarReLU Activation Function")
+    plt.xlabel("Input Value (x)")
+    plt.ylabel("Output Value")
     plt.legend(fontsize="20", loc='best')
     plt.grid(True)
-    plt.show() 
+    plt.show()
