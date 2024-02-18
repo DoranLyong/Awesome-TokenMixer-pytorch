@@ -106,6 +106,7 @@ pytorch == 1.12.1
 
 * StarReLU ([2022](https://arxiv.org/abs/2210.13452)) --- ([pytorch_v1](./model/activation/StarReLU.py))
 * SquaredReLU ([2021](https://arxiv.org/abs/2109.08668)) --- ([pytorch_v1](./model/activation/SquaredReLU.py))
+* Swish ([2017](https://arxiv.org/abs/1710.05941v2)) --- ([pytorch_v1](./model/activation/Swish.py))
 * GELU ([2016](https://arxiv.org/abs/1606.08415)) --- ([pytorch_v1](./model/activation/GELU_likes/GELU.py))([scratch_code](./model/activation/GELU_likes/GELU_from_scratch.py))([quick_version](./model/activation/GELU_likes/quickGELU.py))
 * ReLU ([2010](https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf)) --- ([pytorch_v1](./model/activation/ReLU.py))
 * Softsign ([2009](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)) --- ([pytorch_v1](./model/activation/Modified_S-shaped_functions/Softsign.py))
