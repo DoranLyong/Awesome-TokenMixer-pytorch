@@ -20,6 +20,16 @@ class GELUSctrach(nn.Module):
         #return 0.5 * x * (1 + torch.tanh(x * (1 + 0.044715 * x * x)))
 
 
+class GELU(nn.Module):
+    """ https://paperswithcode.com/method/gelu
+    """
+    def __init__(self, eps=1.0):        
+        super().__init__()        
+
+    def forward(self, x):
+        return 0.5 * x * (1 + torch.erf(x/np.sqrt(2)))
+
+
 
 
 if __name__ == "__main__": 
