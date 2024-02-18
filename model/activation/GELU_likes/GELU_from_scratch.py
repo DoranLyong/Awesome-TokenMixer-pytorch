@@ -3,6 +3,8 @@
     : https://arxiv.org/abs/1606.08415
     : https://paperswithcode.com/method/gelu
 """
+
+import numpy as np 
 import matplotlib.pyplot as plt 
 
 import torch 
@@ -10,8 +12,12 @@ import torch.nn as nn
 
 
 class GELUSctrach(nn.Module):
+    def __init__(self):
+        super().__init__()
+
     def forward(self, x):
-        return 0.5 * x * (1 + torch.tanh(x * (1 + 0.044715 * x * x)))
+        return 0.5 * x * (1 + torch.tanh(np.sqrt(2/3.141592653589793) * (x + 0.044715 * x**3)))
+        #return 0.5 * x * (1 + torch.tanh(x * (1 + 0.044715 * x * x)))
 
 
 
@@ -24,7 +30,7 @@ if __name__ == "__main__":
     x_grad = x.grad 
 
     # == Vis. == #
-    plt.plot(x.detach().numpy(), out.detach().numpy(), c='r', label=f'GELU')
+    plt.plot(x.detach().numpy(), out.detach().numpy(), c='r', label=f'GELU implemented with tanh')
     plt.plot(x.detach().numpy(), x_grad.detach().numpy(), c='r', linestyle='--' ,label='Gradient of GELU')    
 
     plt.title("GELU Activation Function")
