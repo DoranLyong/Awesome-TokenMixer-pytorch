@@ -16,8 +16,9 @@ class GELUSctrach(nn.Module):
         super().__init__()
 
     def forward(self, x):
-        return 0.5 * x * (1 + torch.tanh(np.sqrt(2/3.141592653589793) * (x + 0.044715 * x**3)))
-        #return 0.5 * x * (1 + torch.tanh(x * (1 + 0.044715 * x * x)))
+        cdf = 0.5 *  (1.0 + torch.tanh(np.sqrt(2/np.pi) * (x + 0.044715 * x**3))) # fast approximation 
+        return x * cdf 
+        
 
 
 class GELU(nn.Module):
@@ -27,7 +28,8 @@ class GELU(nn.Module):
         super().__init__()        
 
     def forward(self, x):
-        return 0.5 * x * (1 + torch.erf(x/np.sqrt(2)))
+        cdf = 0.5 * (1.0 + torch.erf(x/np.sqrt(2.0)))
+        return x * cdf 
 
 
 
