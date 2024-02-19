@@ -59,7 +59,7 @@ if __name__ == "__main__":
     plt.plot(x3.detach().numpy(), out3.detach().numpy(), c='skyblue', label=f'beta={0.1} (almost line)')
     plt.plot(x3.detach().numpy(), x3_grad.detach().numpy(), c='skyblue', linestyle='--' ,label='Gradient')     
 
-    plt.title("GELU Variants")
+    plt.title("Swish Variants")
     plt.xlabel("Input Value (x)")
     plt.ylabel("Output Value")
     plt.legend(fontsize="20", loc='best')
