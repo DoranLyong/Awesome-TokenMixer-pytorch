@@ -131,6 +131,7 @@ pytorch == 1.12.1
 * BatchNorm ([2015](https://arxiv.org/abs/1502.03167)) --- ([pytorch_v1](./model/norm/batch_norm1D.py))
 
 # Backbones 
+* Efficient Modulation Network ([2024](https://arxiv.org/abs/2403.19963)) --- ([pytorch_v1](./model/backbones/EfficientModNet.py))
 * VanillaNet ([2023](https://github.com/huawei-noah/VanillaNet/tree/main)) --- ([pytorch_v1](./model/backbones/VanillaNet.py))
 * InceptionNeXt; MetaNeXt ([2023](https://github.com/sail-sg/inceptionnext/tree/main)) --- ([pytorch_v1](./model/backbones/MetaNeXt.py))
 * MetaFormer baseline ([2022](https://github.com/sail-sg/metaformer/tree/main)) --- ([pytorch_v1](./model/backbones/MetaFormer.py))
