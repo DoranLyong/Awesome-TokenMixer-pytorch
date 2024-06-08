@@ -1,6 +1,77 @@
 # (ref) https://github.com/yuweihao/MambaOut/blob/main/models/mambaout.py
-from functools import partial
+"""
++------------------------+
+| Input Tensor [B, H, W, C] |
++------------------------+
+            |
+            v
++-------------------+
+| Normalization Layer |
++-------------------+
+            |
+            v
++-------------------------------+
+| Fully Connected Layer (fc1)    |
++-------------------------------+
+   /             |             \
+  /              |              \
+ v               v               v
++--------+ +-----------+ +---------------------+
+|   g    | |     i     | |         c           |
+| [B, H, | | [B, H, W, | |  [B, H, W, conv_    |
+| W,     | | hidden -  | |  channels] Permute  |
+| hidden]| | conv_     | |  to [B, C, H, W]    |
++--------+ | channels] | +---------------------+
+            |                        |
+            |                        v
+            |               +-------------------+
+            |               | Depthwise         |
+            |               | Convolution       |
+            |               +-------------------+
+            |                         |
+            |                         v
+            |       +-----------------------+
+            |       | Permute Back [B, H,   |
+            |       | W, C]                 |
+            |       +-----------------------+
+            |                         |
+            |                         v
+            |               +------------------+
+            +-------------->| Concatenate with |
+                            | i                |
+                            +------------------+
+                                     |
+                                     v
+                          +-------------------------+
+                          | Activation and Element- |
+                          | wise Multiplication     |
+                          | with g                  |
+                          +-------------------------+
+                                     |
+                                     v
+                          +------------------------+
+                          | Fully Connected Layer  |
+                          | (fc2)                  |
+                          +------------------------+
+                                     |
+                                     v
+                          +-------------------+
+                          | DropPath (if > 0) |
+                          +-------------------+
+                                     |
+                                     v
+                          +------------------------+
+                          | Add Shortcut Connection |
+                          +------------------------+
+                                     |
+                                     v
+                          +------------------------+
+                          | Output Tensor [B, H, W, dim] |
+                          +------------------------+
+"""
 
+
+from functools import partial
 
 import torch 
 import torch.nn as nn 
