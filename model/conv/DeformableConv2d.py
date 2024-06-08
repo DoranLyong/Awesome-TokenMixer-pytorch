@@ -1,4 +1,26 @@
 # (ref) https://pytorch.org/vision/main/generated/torchvision.ops.deform_conv2d.html
+"""
+      Input (x)
+         |
+         v
+  +--------------+
+  | Offset Conv  | 
+  | 2 * k * k    |
+  +--------------+
+         |
+         v
+     Offset
+         |
+         v
+  +--------------+
+  | Deformable   |
+  | Convolution  |
+  +--------------+
+         |
+         v
+     Output
+"""
+
 
 
 import torch 
