@@ -43,7 +43,6 @@ pytorch == 1.12.1
 
 ***
 # State Space Models 
-* GatedCNNBlock (MambaOut, [2024](https://github.com/yuweihao/MambaOut)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/GatedCNN_MambaOut.py))(graph)
 * CSM (VMamba, [2024](https://github.com/MzeroMiko/VMamba)) --- (pytorch_v1)(graph)
 * Bidirectional Mamba (Vim, [2024](https://github.com/hustvl/Vim)) --- (pytorch_v1)(graph)
 * ConvSSM (ConvS5, [2023](https://arxiv.org/abs/2310.19694)) --- (pytorch_v1)(graph)
@@ -69,7 +68,7 @@ pytorch == 1.12.1
 * An all-MLP Architecture for Vision (MLP-Mixer, [2021](https://arxiv.org/abs/2105.01601)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/mlp/MLP-mixer.py))(graph)
 
 # Convolutions
-
+* GatedCNNBlock (MambaOut, [2024](https://github.com/yuweihao/MambaOut)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/GatedCNN_MambaOut.py))(graph)
 * Efficient Modulation (EfficientMod. [2024](https://arxiv.org/abs/2403.19963)) --- ([pytorch_v1](./model/attention/EfficientMod_Attention.py))
 * InceptionDWConv2d (InceptionNeXt, [2023](https://github.com/sail-sg/inceptionnext)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/InceptionDWConv2d_InceptionNeXt.py))(graph)
 * ParC operator (ParC-Net, [2022](https://github.com/hkzhang91/parc-net)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/ParC_convnext.py))(graph)
