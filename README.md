@@ -24,6 +24,7 @@ pytorch == 1.12.1
 ***
 
 # Contents
+- [Kolmogorov-Arnold Models](#kolmogorov-arnold-models)
 - [State Space Models](#state-space-models)
 - [Spatial Attentions](#spatial-attentions)
 - [Channel Attentions](#channel-attentions)
@@ -42,6 +43,9 @@ pytorch == 1.12.1
 
 
 ***
+# Kolmogorov-Arnold Models 
+* Kolmogorov-Arnold Transformer (KAT, [2024](https://arxiv.org/abs/2409.10594)) --- (pytorch_v1)
+
 # State Space Models 
 * CSM (VMamba, [2024](https://github.com/MzeroMiko/VMamba)) --- (pytorch_v1)(graph)
 * Bidirectional Mamba (Vim, [2024](https://github.com/hustvl/Vim)) --- (pytorch_v1)(graph)
