@@ -70,6 +70,7 @@ pytorch == 1.12.1
 # Convolutions
 * GatedCNNBlock (MambaOut, [2024](https://github.com/yuweihao/MambaOut)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/GatedCNN_MambaOut.py))(graph)
 * Efficient Modulation (EfficientMod. [2024](https://arxiv.org/abs/2403.19963)) --- ([pytorch_v1](./model/attention/EfficientMod_Attention.py))
+* SMT (Scale-Aware Modulation Meet Transformer, [2023](https://github.com/AFeng-x/SMT)) --- ([pytorch_v1](./model/conv/SMT.py))
 * InceptionDWConv2d (InceptionNeXt, [2023](https://github.com/sail-sg/inceptionnext)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/InceptionDWConv2d_InceptionNeXt.py))(graph)
 * ParC operator (ParC-Net, [2022](https://github.com/hkzhang91/parc-net)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/ParC_convnext.py))(graph)
 * Dynamic DWConv (DWNet, [2022](https://arxiv.org/abs/2106.04263#)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/DynamicDWConv.py))(graph)
