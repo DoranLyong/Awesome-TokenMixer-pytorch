@@ -84,6 +84,7 @@ pytorch == 1.12.1
 * Deformable Conv (Deformable ConvNet, [2017](https://pytorch.org/vision/main/generated/torchvision.ops.deform_conv2d.html)) --- ([pytorch_v1](https://github.com/DoranLyong/Awesome-TokenMixer-pytorch/blob/main/model/conv/DeformableConv2d.py))
 
 # Spectral Features
+* Dynamic Filter (DFFormer, [2024](https://github.com/okojoalg/dfformer)) --- ([pytorch_v1](./model/spectral/DynamicFilter.py))
 * Global Filter (GFNet, [2021](https://github.com/raoyongming/GFNet)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/globalfilter_GFNet.py))(graph)
 * Fourier Mixer (FNet, [2021](https://github.com/google-research/google-research/tree/master/f_net)) --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fouriermixer_FNet.py))(graph)
 * Fourier_test --- ([pytorch_v1](https://github.com/DoranLyong/TokenMixer-pytorch/blob/main/model/spectral/fourier_test.py))
