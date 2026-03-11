@@ -1,4 +1,4 @@
-# Awesome-TokenMixer-pytorch
+# Deep Learning Architecture
 
 This project is inspired by [Fighting CV](https://github.com/xmu-xiaoma666/External-Attention-pytorch)'s project. Also, other references are included to get code insights.
 
